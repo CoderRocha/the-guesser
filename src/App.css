@@ -2,6 +2,10 @@
   max-width: 860px;
   margin: 40px auto;
 }
+a {
+  color: white;
+  text-decoration: none; /* no underline */
+}
 button {
   background: none;
   border: 2px solid #fff;
