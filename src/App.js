@@ -123,7 +123,7 @@ function App() {
         ))}
       </div>
       <p>Turns: {turns}</p>
-      <p>Created by: <a href="https://github.com/CoderRocha/" target="_blank" rel="noreferrer">Guilherme Rocha</a></p>
+      <p>Game Created by: <a href="https://github.com/CoderRocha/" target="_blank" rel="noreferrer">Guilherme Rocha</a></p>
       <p>Music by: <a href="https://freesound.org/people/UNIVERSFIELD/" target="_blank" rel="noreferrer">UNIVERSFIELD</a></p>
       <audio ref={audioRef}>
         <source src="/./music/universfield__mysterious-music-box.ogg" type="audio/ogg" />
