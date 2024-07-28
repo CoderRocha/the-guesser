@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import './App.css';
 import SingleCard from './components/SingleCard';
 
@@ -17,6 +17,40 @@ function App() {
   const [choiceOne, setChoiceOne] = useState(null)
   const [choiceTwo, setChoiceTwo] = useState(null)
   const [disabled, setDisabled] = useState(false)
+  const audioRef = useRef(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  useEffect(() => {
+    const audio = audioRef.current;
+
+    const handlePlay = () => {
+      setIsPlaying(true);
+      audio.muted = false; // unmute after playback starts
+    };
+
+    if (audio) {
+      audio.loop = true;
+      audio.muted = true; // mute initially to allow autoplay
+
+      audio.addEventListener('play', handlePlay);
+
+      return () => {
+        audio.removeEventListener('play', handlePlay);
+      };
+    }
+  }, []);
+
+  const handleManualPlay = () => {
+    const audio = audioRef.current;
+    if (audio) {
+      audio.play().then(() => {
+        setIsPlaying(true);
+        console.log('Music started manually');
+      }).catch(error => {
+        console.error('Error playing music manually:', error);
+      });
+    }
+  };
 
   // shuffle cards
   const shuffleCards = () => {
@@ -91,6 +125,13 @@ function App() {
       <p>Turns: {turns}</p>
       <p>Created by: <a href="https://github.com/CoderRocha/" target="_blank" rel="noreferrer">Guilherme Rocha</a></p>
       <p>Music by: <a href="https://freesound.org/people/UNIVERSFIELD/" target="_blank" rel="noreferrer">UNIVERSFIELD</a></p>
+      <audio ref={audioRef}>
+        <source src="/./music/universfield__mysterious-music-box.ogg" type="audio/ogg" />
+        Your browser does not support this audio element.
+      </audio>
+      {!isPlaying && (
+        <button onClick={handleManualPlay}>Play Music</button>
+      )}
     </div>
   );
 }
