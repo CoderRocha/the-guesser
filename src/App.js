@@ -108,6 +108,7 @@ function App() {
 
   return (
     <div className="App">
+      <img src='./logo.png'></img>
       <h1>The Guesser</h1>
       <button onClick={shuffleCards}>Start a New Game</button>
 
