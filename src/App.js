@@ -89,6 +89,8 @@ function App() {
         ))}
       </div>
       <p>Turns: {turns}</p>
+      <p>Created by: Guilherme Rocha</p>
+      <p>Music by: UNIVERSFIELD</p>
     </div>
   );
 }
