@@ -89,8 +89,8 @@ function App() {
         ))}
       </div>
       <p>Turns: {turns}</p>
-      <p>Created by: Guilherme Rocha</p>
-      <p>Music by: UNIVERSFIELD</p>
+      <p>Created by: <a href="https://github.com/CoderRocha/">Guilherme Rocha</a></p>
+      <p>Music by: <a href="https://freesound.org/people/UNIVERSFIELD/">UNIVERSFIELD</a></p>
     </div>
   );
 }
