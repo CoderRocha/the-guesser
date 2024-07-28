@@ -109,7 +109,7 @@ function App() {
   return (
     <div className="App">
       <h1>The Guesser</h1>
-      <button onClick={shuffleCards}>New Game</button>
+      <button onClick={shuffleCards}>Start a New Game</button>
 
       <div className="card-grid">
         {cards.map(card => (
