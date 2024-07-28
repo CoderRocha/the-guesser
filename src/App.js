@@ -48,8 +48,7 @@ function App() {
         })
         resetTurn()
       } else {
-        console.log('You dont have a match. Try again!')
-        resetTurn()
+        setTimeout(() => resetTurn(), 1000)
       }
     }
   }, [choiceOne, choiceTwo])
@@ -74,6 +73,7 @@ function App() {
           key={card.id}
           card={card}
           handleChoice={handleChoice}
+          flipped={card === choiceOne || card === choiceTwo || card.matched}
           />
         ))}
       </div>
