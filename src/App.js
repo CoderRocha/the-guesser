@@ -37,7 +37,7 @@ function App() {
   useEffect(() => {
     if(choiceOne && choiceTwo) {
       setDisabled(true)
-      
+
       if(choiceOne.src === choiceTwo.src) {
         setCards(prevCards => {
           return prevCards.map(card => {
@@ -81,6 +81,7 @@ function App() {
           />
         ))}
       </div>
+      <p>Turns: {turns}</p>
     </div>
   );
 }
