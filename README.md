@@ -15,7 +15,7 @@ After the installation, to run the application in a local server, run the follow
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The game is about a simple magical card game, where it displays 12 cards on the screen in a random order, and a "Turns" counter at the end of the array of cards. The player must find the match of each card in order to get all of the cards matched with the least amount of turns possible. After that, the game will then end because all of the cards have been matched.
-If the player wants to try again, there's a "Start a New Game" button right above the cards so it can start a new game again, generating 12 new cards in random positions to try again and get a better score with less "Turns" to finish the game.
+If the player wants to try again, there's a "Start a New Game" button right below the cards so it can start a new game again, generating 12 new cards in random positions to try again and get a better score with less "Turns" to finish the game.
 
 ## Game Features
 
