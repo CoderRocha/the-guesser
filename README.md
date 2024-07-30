@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# The Guesser
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+"The Guesser" is a simple card game project created by me, Guilherme Rocha, to understand more the process of creating a react application from the ground up, utilizing many of the react features, such as useEffect, useRef, useState and many more.
 
-## Available Scripts
+# How to play the game?
 
-In the project directory, you can run:
+After you download and extract all the source code on the zip file to it's own folder, In the project directory, you can run the following command to install the necessary dependencies to run the application without issues:
 
-### `npm start`
+### `npm install`
 
-Runs the app in the development mode.\
+After the installation, to run the application in a local server, run the following command:
+
+### `npm run start`
+
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The game is about a simple magical card game, where it displays 12 cards on the screen, in a random order, and the player must
+find the match of each card in order to get all of the cards matched. After that, the game will then end because all of the
+cards have been matched. If the player wants to try again, there's a "Start a New Game" button right above the cards so it can
+start a new game again, generating 12 new cards in random positions to try again and get a better "Turns" score.
 
-### `npm test`
+## Game Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- 12 Randomly positioned cards each time a new game is started
+- Option to start a new game
+- Music ambience to cheer you up (or to spook you up, it depends on your mood)
+- Last but not least, a "Turns" counter so you can see how many turns it took to you finish the game
 
-### `npm run build`
+## Technologies used in this project
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- HTML5
+- CSS3
+- Javascript
+- React.js
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Final Considerations
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The music may or may not start when the project is launched. If it doesn't start automatically, you can scroll to the
+bottom of the page and then, you can find a button named "Play Music" to play it manually and enjoy this mysterious little
+theme i selected for the game's ambience.
