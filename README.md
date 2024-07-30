@@ -21,8 +21,8 @@ If the player wants to try again, there's a "Start a New Game" button right abov
 
 - 12 Randomly positioned cards each time a new game is started
 - Option to start a new game anytime you want
-- Music ambience to cheer you up (or to spook you up, it depends on your mood)
-- Last but not least, a "Turns" counter so you can see how many turns it took to you finish the game
+- A "Turns" counter so you can see how many turns it took to you finish the game
+- Last but not least, some music ambience to cheer you up (or to spook you up, it depends on your mood)
 
 ## Technologies used in this project
 

@@ -110,7 +110,6 @@ function App() {
     <div className="App">
       <img src='./logo.png' alt='The Guesser Logo'></img>
       <h1>The Guesser</h1>
-      <button onClick={shuffleCards}>Start a New Game</button>
 
       <div className="card-grid">
         {cards.map(card => (
@@ -123,6 +122,7 @@ function App() {
           />
         ))}
       </div>
+      <button onClick={shuffleCards}>Start a New Game</button>
       <p>Turns: {turns}</p>
       <p>Game Created by: <a href="https://github.com/CoderRocha/" target="_blank" rel="noreferrer">Guilherme Rocha</a></p>
       <p>Music by: <a href="https://freesound.org/people/UNIVERSFIELD/" target="_blank" rel="noreferrer">UNIVERSFIELD</a></p>
